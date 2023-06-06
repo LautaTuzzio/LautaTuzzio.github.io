@@ -1,5 +1,6 @@
 body{
     background-color: #212121;
+    overflow-x: hidden;
 }
 
 ul{
@@ -88,7 +89,6 @@ a{
     padding-right: 20px;
     padding-left: 20px;
     text-decoration: none;
-
 }
 
 nav{
@@ -110,4 +110,27 @@ nav{
      0 18.8px 19.2px rgba(0, 0, 0, 0.037),
      0 22px 40px rgba(0, 0, 0, 0.019)
     ;
+}
+
+.holder{
+    margin-left: 200px;
+    margin-top: 50px;
+    height: 375px;
+    width: 325px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+img{
+    border-radius: 5px;
+}
+
+h2,h5
+{
+    font-family: "Oswald", Arial, sans-serif;
+    color: #1b5392;
+    letter-spacing: 1px;
+    margin-left: 210px;
+    transform: translateY(40px);
+    font-weight: 700;
 }
