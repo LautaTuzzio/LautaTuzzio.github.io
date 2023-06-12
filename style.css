@@ -1,6 +1,7 @@
 body{
     background-color: #212121;
     overflow-x: hidden;
+    
 }
 
 ul{
@@ -154,4 +155,21 @@ h2,h5
     height: 0;
     font-family: "Oswald", Arial, sans-serif;
 
+}
+.p3{
+    transform: translate(600px, -390px);
+    color: white;
+    width: 1000px;
+    font-size: 1.5rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;
+}
+
+.p4{
+    transform: translate(600px, -390px);
+    color: white;
+    width: 1000px;
+    font-size: 1.6rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;
 }
