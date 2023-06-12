@@ -125,6 +125,17 @@ img{
     border-radius: 5px;
 }
 
+.p1{
+    transform: translate(600px, -390px);
+    color: white;
+    width: 1000px;
+    font-size: 1.9rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;
+
+}
+
+
 h2,h5
 {
     font-family: "Oswald", Arial, sans-serif;
@@ -133,4 +144,14 @@ h2,h5
     margin-left: 210px;
     transform: translateY(40px);
     font-weight: 700;
+}
+
+.p2{
+    transform: translate(600px, -370px);
+    color: white;
+    width: 1000px;
+    font-size: 1.6rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;
+
 }
