@@ -111,6 +111,7 @@ nav{
      0 18.8px 19.2px rgba(0, 0, 0, 0.037),
      0 22px 40px rgba(0, 0, 0, 0.019)
     ;
+    
 }
 
 .holder{
@@ -172,4 +173,64 @@ h2,h5
     font-size: 1.6rem;
     height: 0;
     font-family: "Oswald", Arial, sans-serif;
+}
+
+.p5{
+    transform: translate(600px, -390px);
+    color: white;
+    width: 1000px;
+    font-size: 1.8rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;
+}
+
+.p6{
+    transform: translate(600px, -390px);
+    color: white;
+    width: 1000px;
+    font-size: 1.65rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;
+}
+
+.p7{
+    transform: translate(600px, -390px);
+    color: white;
+    width: 1000px;
+    font-size: 1.6rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;
+}
+.p8{
+    transform: translate(600px, -400px);
+    color: white;
+    width: 1000px;
+    font-size: 1.6rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif; 
+}
+.f1{
+    transform: translate(600px, -400px);
+    color: white;
+    width: 1000px;
+    font-size: 1.7rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif; 
+}
+.f2{
+    transform: translate(600px, -400px);
+    color: white;
+    width: 1000px;
+    font-size: 1.45rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif; 
+}
+
+.f3{
+    transform: translate(600px, -400px);
+    color: white;
+    width: 1000px;
+    font-size: 1.6rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;  
 }
