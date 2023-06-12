@@ -111,7 +111,7 @@ nav{
      0 18.8px 19.2px rgba(0, 0, 0, 0.037),
      0 22px 40px rgba(0, 0, 0, 0.019)
     ;
-    
+
 }
 
 .holder{
@@ -233,4 +233,34 @@ h2,h5
     font-size: 1.6rem;
     height: 0;
     font-family: "Oswald", Arial, sans-serif;  
+}
+
+
+.plane-holder1{
+    width: 500px;
+    height: 400px;
+    border: 2px solid white;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}
+.plane1{
+    width: 500px;
+    height: 300px;
+    border-radius: 0 0 10 10px;
+
+}
+
+h1{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+h3{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: calc(+24px);
 }
