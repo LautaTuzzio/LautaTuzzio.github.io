@@ -242,11 +242,11 @@ h2,h5
 
 .plane-holder1{
     width: 500px;
-    height: 400px;
-    border: 2px solid white;
-    margin-left: 200px;
-    margin-top: 50px;
-    border-radius: 10px;
+        height: 400px;
+        border: 2px solid white;
+        margin-left: 200px;
+        margin-top: 50px;
+        border-radius: 10px;
 
 }
 .plane1{
@@ -267,4 +267,39 @@ h3{
     text-align: center;
     color: white;
     font-size: calc(+24px);
+}
+
+.hist1{
+    transform: translate(800px, -390px);
+    color: white;
+    width: 1000px;
+    font-size: 2rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;   
+}
+
+.plane-holder2{
+    width: 500px;
+        height: 400px;
+        border: 2px solid white;
+        margin-top: 50px;
+        border-radius: 10px;
+        transform: translateX(250%);
+
+}
+.plane2{
+    width: 500px;
+    height: 300px;
+    border-radius: 0 0 10 10px;
+
+}
+
+.hist2{
+    transform: translate(-1070px, -420px);
+    color: white;
+    width: 1000px;
+    font-size: 1.6rem;
+    height: 0;
+    font-family: "Oswald", Arial, sans-serif;   
+    text-align: left;
 }
