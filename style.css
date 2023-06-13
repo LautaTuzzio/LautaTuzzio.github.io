@@ -8,6 +8,21 @@ body{
     
 }
 
+.animation{
+    animation: fadeIn 0.4s ease-in forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+
+}
+main{
+    animation: fadeIn 0.4s ease-in forwards;
+    animation-delay: 2.0s;
+    opacity: 0;
+    z-index: 1;
+}
+header{
+    position:  relative
+}
 ul{
 margin: 0;
 padding: 0;
@@ -94,6 +109,7 @@ a{
     padding-right: 20px;
     padding-left: 20px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 nav{
@@ -101,8 +117,7 @@ nav{
     margin-top: 20px;
     height: 4em;
     width: 600px;
-    position: sticky;
-    top: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,8 +130,24 @@ nav{
      0 18.8px 19.2px rgba(0, 0, 0, 0.037),
      0 22px 40px rgba(0, 0, 0, 0.019)
     ;
+    gap: 20px;
+    position: sticky;
+    top: 0;
 
 }
+
+nav a:nth-child(1):hover{
+    color: #f1b11b;
+}
+nav a:nth-child(2):hover{
+   
+    color: #93804C;
+}
+nav a:nth-child(3):hover{
+    color: #003399
+}
+
+
 
 .holder{
     margin-left: 200px;
@@ -302,4 +333,38 @@ h3{
     height: 0;
     font-family: "Oswald", Arial, sans-serif;   
     text-align: left;
+}
+
+.text{
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    letter-spacing: .5px;
+    font-family: 'Titillium Web', Arial, Sans-Serif;
+}
+
+.text-holder{
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 80%;
+    transform: translateX(14%);
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.cover{
+    height: 40%;
+    background-color: #212121;
 }
