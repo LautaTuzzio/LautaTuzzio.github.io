@@ -1,181 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de contacto</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="cover">
-        <ul>
-            <li>B</li>
-            <li>l</li>
-            <li>u</li>
-            <li>e</li>
-            <li>e</li>
-            <li>A</li>
-            <li>n</li>
-            <li>g</li>
-            <li>e</li>
-            <li>l</li>
-            <li>s</li>
-        </ul>
-<div class="animation">
-        <nav>
-            <a href="#pilots">PILOTOS</a>
-            <a href="#planes">AVIONES</a>
-            <a href="#historia">HISTORIA</a>
-        </nav>
+<nav>
+  <div class="nav-container">
+    <h3 onclick="refreshPage()" class="button">Tabla de Datos</h3>
+    <div class="button-container">
+      <button id="sobre-mi-btn"><span></span>Sobre mi</button>
+      <button onclick="downloadFile()"><span></span>Codigo</button>
+      <button id="temas-btn"><span></span>Temas</button>
     </div>
-    </div>
-    </header>
+  </div>
+</nav>
 
-    <main>
-        <div id="pilots"class="pilots">
-            <h1>Pilotos</h1>
-        <div>
-            <h2>#1 | CDR ALEXANDER ARMATAS |</h2>
-            <h5>// Flight Leader / Commanding Officer</h5>
-        </div>
-        <div class="holder img-holder1">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/01-Armatas.jpg" alt="">
-        </div>
-            <p class="p1">El comandante Alexander P. Armatas es nativo de Skaneateles, Nueva York. Se graduó de la Academia Naval de los Estados Unidos en 2002 con una licenciatura en ingeniería aeroespacial.<br><br>
+<div id="sobre-mi-content" style="display: none;">
+</div>
 
-                Alexander se unió a los Blue Angels en agosto de 2022. Acumuló más de 4100 horas de vuelo y 911 aterrizajes detenidos por portaaviones. Sus condecoraciones incluyen la Medalla de Servicio Meritorio, cuatro Medallas Aéreas de Huelga/Vuelo, cinco Medallas de Elogio de la Armada y el Cuerpo de Marines, una Medalla de Logro de la Armada y el Cuerpo de Marines, y varios premios personales, de unidad y de servicio.</p>
-        <div>
-            <h2>#2 | LCDR CHRIS KAPUSCHANSKY |</h2>
-            <h5>// Right Wing</h5>
-        </div>
-        <div class="holder img-holder2">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/02-Kapuschansky.jpg" alt="">
-        </div>
-        <p class="p2">El teniente comandante Christopher Kapuschansky nació en Brockton, Massachusetts y en 2002 se mudó a Yorktown, Virginia, donde se graduó de York High School en 2007. Después de graduarse, asistió a Valley Forge Military College en Wayne, Pensilvania durante un año antes de asistir a los Estados Unidos. Academia Naval en Annapolis, Maryland. Se graduó de la Academia Naval con una Licenciatura en Ciencias en Oceanografía en 2012 y obtuvo su comisión en la Marina de los EE. UU.<br><br>
+<div class="animacion">
+  <div class="container" id="main-content">
+    <h2 class="Titulo">Datos</h2>
+    <form action="enviar.php" method="get">
+      <label>Nombre:<br> </label>
+      <input class="input-field" type="text" name="nombre">
+    </form>
 
-            Christopher se unió a los Blue Angels en septiembre de 2021 y ha acumulado más de 1900 horas de vuelo y más de 303 aterrizajes detenidos en portaaviones. Sus condecoraciones incluyen una Medalla de Logro de la Armada y el Cuerpo de Marines, y varios otros premios personales y de unidad.</p>
-        <div>
-            <h2>#3 | LT AMANDA LEE |</h2>
-            <h5>// Left Wing</h5>
-        </div>
-        <div class="holder img-holder3">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/03-Lee.jpg" alt="">
-        </div>
-        <p class="p3">La teniente Amanda Lee es nativa de Mounds View, Minnesota. Se graduó de Irondale High School en 2004, donde compitió en fútbol, ​​hockey sobre hielo y natación. Mientras asistía a la Universidad de Minnesota Duluth, Amanda se alistó en la Marina de los EE. UU. como técnica en electrónica de aviación (AT) y se reportó a su primer comando, VFA-136 "Knighthawks". Fue seleccionada para comisionar como piloto a través del programa de comisionamiento Seaman-to-Admiral (STA-21) en 2009. Al año siguiente, Lee asistió al Instituto de Ciencias Navales (NSI) para recibir capacitación de oficiales en Newport, Rhode Island, y simultáneamente comenzó sus estudios en la Universidad Old Dominion en Norfolk, Virginia, donde recibió una Licenciatura en Ciencias en bioquímica.<br><br>
 
-            Amanda se unió a los Blue Angels en septiembre de 2022. Ha acumulado más de 1400 horas de vuelo y más de 225 aterrizajes detenidos en portaaviones. Sus condecoraciones incluyen cuatro medallas Navy Achievement y varios premios personales y de unidad</p>
-        <div>
-            <h2>#4 | LT SCOTT GOOSSENS |</h2>
-            <h5>// Slot</h5>
-        </div>
-        <div class="holder img-holder4">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/04-Goossens.jpg" alt="">
-        </div>
-        <p class="p4">El teniente Scott Goossens, nacido en Nueva York, Nueva York, y criado en San Francisco, California, se graduó de St. Ignatius College Preparatory en 2006. Asistió a la Universidad George Washington en Washington, D.C., donde se graduó con una Licenciatura en Artes Políticas. Ciencias en 2010. Después de la universidad, trabajó en Washington, D.C. en política de defensa y seguridad nacional hasta 2013, cuando se unió a la Armada y obtuvo su comisión a través de la Escuela de Candidatos a Oficiales en Newport, Rhode Island.<br><br>
+    <form action="enviar.php" method="get">
+      <label>Apellido:<br> </label>
+      <input class="input-field" type="text" name="apellido">
+    </form>
 
-            Scott se unió a los Blue Angels en septiembre de 2021. Ha acumulado más de 2100 horas de vuelo y tiene 348 aterrizajes detenidos en portaaviones. Sus condecoraciones incluyen la Medalla al Logro de la Armada y el Cuerpo de Marines y varios premios personales y de unidad.</p>
-        <div>
-            <h2>#5 | LCDR JULIUS BRATTON |</h2>
-            <h5>// Lead Solo</h5>
-        </div>
-        <div class="holder img-holder5">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/05-Bratton.jpg" alt="">
-        </div>
-        <p class="p5">El teniente comandante Julius Bratton es nativo de Woodlawn, Tennessee y se graduó de Northwest High School en 2007, donde se destacó en fútbol y atletismo. Asistió a la Academia Naval de los Estados Unidos en Annapolis, Maryland, se graduó con una Licenciatura en Oceanografía en 2011 y fue comisionado como Alférez en la Marina de los Estados Unidos.<br><br>
 
-            Julius se unió a los Blue Angels en septiembre de 2019. Acumuló más de 2500 horas de vuelo y tiene 207 aterrizajes detenidos en portaaviones. Sus condecoraciones incluyen una Medalla Aérea Strike Flight, tres Medallas de Logro de la Armada y el Cuerpo de Marines, y varios otros premios personales y de unidad.</p>
-        <div>
-            <h2>#6 | LCDR GRIFFIN STANGEL |</h2>
-            <h5>// Opposing Solo</h5>
-        </div>
-        <div class="holder img-holder6">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/06-Stangel.jpg" alt="">
-        </div>
-        <p  class="p6">El teniente comandante Griffin Stangel es originario de Madison, Wisconsin y se graduó de la Escuela Secundaria Madison West en 2008. Asistió a la Universidad de Dakota del Norte en Grand Forks, Dakota del Norte y se graduó con una Licenciatura en Ciencias en Control de Tráfico Aéreo en 2012. Inmediatamente después Al graduarse, se presentó en Newport, Rhode Island, donde recibió su comisión como Alférez en la Marina de los Estados Unidos después de completar la Escuela de Candidatos a Oficiales.<br><br>
+    <form action="enviar.php" method="get">
+      <label>Mail:<br> </label>
+      <input class="input-field" type="text" name="mail">
+    </form>
 
-            Griffin se unió a los Blue Angels en septiembre de 2021 y ha acumulado más de 1500 horas de vuelo y más de 190 aterrizajes detenidos en portaaviones. Sus condecoraciones incluyen tres Medallas de Logros de la Armada y el Cuerpo de Marines, y varios otros premios personales y de unidad.
-            
-             
-            </p>
-        <div>
-            <h2>#7 | LCDR THOMAS ZIMMERMAN |</h2>
-            <h5>// Narrator</h5>
-        </div>
-        <div class="holder img-holder7">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/07-Zimmerman.jpg" alt="">
-        </div>
-        <p class="p7">El teniente comandante Thomas Zimmerman es nativo de Baltimore, Maryland. Se graduó de St. Paul's School en 2004 con letras en fútbol, ​​lucha libre y lacrosse. Después de graduarse, asistió a la Escuela Preparatoria de la Academia Naval de los Estados Unidos en Newport, Rhode Island, durante un año antes de asistir a la Academia Naval de los Estados Unidos en Annapolis, Maryland. Hizo letras en lacrosse en ambas escuelas y se graduó de la Academia Naval con una licenciatura en ciencias en ingeniería oceánica; ganando su comisión como alférez en la Marina de los EE. UU. en 2009.<br><br>
 
-            Thomas se unió a los Blue Angels en septiembre de 2022. Acumuló más de 3000 horas de vuelo y 542 aterrizajes detenidos en portaaviones. Sus condecoraciones incluyen una Medalla de elogio de la Armada y el Cuerpo de Marines, dos medallas de Logros de la Armada y el Cuerpo de Marines y varios otros premios personales y de unidad.</p>
-        <div>
-            <h2>#8 | LCDR BRIAN VAUGHT |</h2>
-            <h5>// Events Coordinator</h5>
-        </div>
-        <div class="holder img-holder8">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/08-Vaught.jpg" alt="">
-        </div>
-        <p class="p8">El teniente comandante Brian Vaught es nativo de Englewood, Colorado. Se graduó de Cherry Creek High School en 2004, donde se destacó en Lacrosse. Después de la secundaria, asistió a la Universidad de Colorado en Boulder, Colorado, donde se graduó con una licenciatura en administración de empresas. Después de graduarse, Brian trabajó en marketing y promociones de deportes profesionales, y eventualmente asistió a la Escuela de Candidatos a Oficiales en Newport, Rhode Island, donde obtuvo su comisión como Alférez en la Marina de los EE. UU. en 2011.<br><br>
+    <form action="enviar.php" method="get">
+      <label>Observaciones:<br> </label>
+      <input class="input-field" type="text" name="observaciones">
+    </form>
 
-            Brian se unió a los Blue Angels en septiembre de 2022. Acumuló más de 1500 horas de vuelo y más de 303 aterrizajes detenidos en portaaviones. Sus condecoraciones incluyen dos medallas de elogio de la Marina y el Cuerpo de Infantería de Marina, dos medallas de logros de la Marina y del Cuerpo de Infantería de Marina, y varias otras unidades y condecoraciones personales.</p>
-        <div>
-            <h2>CAPT | JACKSON STREIFF |</h2>
-            <h5>// C-130 "Fat Albert" Pilot</h5>
-        </div>
-        <div class="holder img-holder9">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/10-Streiff.jpg" alt="">
-        </div>
-            <p class="f1">El capitán Jackson Streiff es nativo de Omaha, Nebraska. Se graduó de Millard South High School en 2010, donde jugó fútbol universitario. En 2014, se graduó de la Universidad de Nebraska Lincoln con una Licenciatura en Ciencias en Justicia Criminal. Después de graduarse, obtuvo una comisión como segundo teniente en el Cuerpo de Marines de los Estados Unidos a través del programa del Curso de Líderes de Pelotón y se reportó a la Escuela Básica a bordo de la Base del Cuerpo de Marines de Quantico, Virginia.<br><br>
 
-                El Capitán Streiff ha acumulado más de 950 horas de vuelo en el transcurso de múltiples ejercicios conjuntos, bilaterales y multilaterales en el área de responsabilidad del Pacífico, y ha recibido varios premios personales y de unidad.</p>
-        <div>
-            <h2>MAJ | JOSHUA SOLTAN |</h2>
-            <h5>C-130 "Fat Albert" Pilot</h5>
-        </div>
-        <div class="holder img-holder10">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/11-Soltan.jpg" alt="">
-        </div>
-        <p class="f2">
-            El Mayor Joshua Soltan es nativo de Spokane, Washington, donde se graduó de la Escuela Secundaria Central Valley en 2006. En 2010, se graduó de la Universidad Central de Washington con una Licenciatura en Ciencias en Aviación y una especialización en Administración de Empresas. En agosto de 2010, obtuvo su comisión como Segundo Teniente en el Cuerpo de Marines de los Estados Unidos a través del programa del Curso de Líderes de Pelotón. Se reportó a la Oficina de Selección de Oficiales, Distrito de Reclutamiento 12 de Seattle, Washington, como Asistente de Reclutamiento de Oficiales. En 2011, se transfirió a The Basic School en Camp Barrett, Quantico, Virginia para completar la capacitación.<br><br>
-            
-            Joshua se unió a los Blue Angels en 2021. Ha acumulado más de 1600 horas de vuelo, 5 horas de combate, numerosas operaciones y ejercicios en las áreas de responsabilidad de Europa, Medio Oriente y el Pacífico. Sus condecoraciones incluyen la Medalla al Servicio Humanitario, la Medalla al Logro de la Armada y el Cuerpo de Marines, la Medalla de elogio de la Armada y el Cuerpo de Marines y varias medallas personales y de servicio.</p>
-        <div>
-            <h2>CAPT | SAMUEL PETKO |</h2>
-            <h5>// Maintenance Officer</h5>
-        </div>
-        <div class="holder img-holder11">
-            <img src="https://www.blueangels.navy.mil/assets/img/photos/officers/12-Petko.jpg" alt="">
-        </div>
-        <p class="f3">El capitán Samuel Petko es nativo de Osceola, Indiana. Se graduó de Penn High School en 2009, donde luchó y jugó rugby. Después de la escuela secundaria, asistió a la Universidad de Indiana y se graduó con una licenciatura en administración de empresas. En 2016, obtuvo una comisión como segundo teniente en el Cuerpo de Marines de los Estados Unidos a través de la Escuela de Candidatos a Oficiales y se reportó a la Escuela Básica a bordo de Marine Corps Base Quantico, Virginia.<br><br>
+    <form action="enviar.php" method="get">
+      <input class="enviar" type="submit" value="Enviar">
+    </form>
+  </div>
+</div>
+<script src="index.js"></script>
 
-            Samuel se unió a los Blue Angels en 2022. Ha acumulado más de 1000 horas de vuelo y múltiples calificaciones de instructor en el transcurso de múltiples ejercicios conjuntos, bilaterales y multilaterales en el área de responsabilidad de USINDOPACOM. Sus condecoraciones incluyen la Medalla al Servicio Humanitario, la Medalla al Logro de la Marina y el Cuerpo de Marines y varias medallas de apoyo personal y de servicio.</p>
-        </div>
-
-        <div id="planes" class="aviones">
-            <h1>Aviones</h1>
-            <div class="plane-holder1">
-                <h3>F/A-18 "Super Hornet"<br>(2021-Presente)</h3>
-                <img class="plane1"src="https://media.defense.gov/2021/Jun/29/2002752907/-1/-1/0/131231-F-IK176-0068.JPG" alt="">
-            </div>
-            <p class="hist1">El McDonnell Douglas F/A-18 Hornet es un caza polivalente bimotor de cuarta generación de origen estadounidense con capacidad todo tiempo, para ser embarcado en portaviones. Fue desarrollado en los años setenta por la compañía McDonnell Douglas (desde 1997 integrada en Boeing) a partir del prototipo Northrop YF-17 para la Armada y el Cuerpo de Marines de los Estados Unidos. El Hornet también ha sido exportado a siete países para servir en sus fuerzas aéreas. Desde 1986 es usado para acrobacia aérea por el grupo de demostración aérea "Blue Angels" de la Armada estadounidense.</p>
-            <div class="plane-holder2">
-                <h3>C-130J Super Hercules (Fat Albert)<br>(2020–Presente)</h3>
-                <img class="plane2"src="https://columbusairshow.com/wp-content/uploads/2021/12/CAS_FatAlbert_Individual.jpg" alt="">
-                <p class="hist2">El Lockheed C-130 Hercules es un avión de transporte táctico medio-pesado propulsado por cuatro motores turbohélice, fabricado en los Estados Unidos desde los años 1950 por la compañía Lockheed (ahora Lockheed Martin). El Hercules es el principal avión de transporte de muchas fuerzas armadas del mundo. Ha prestado servicio en más de 50 países, en sus cerca de 40 versiones y modelos distintos, en incontables operaciones militares, civiles y de ayuda humanitaria. En diciembre de 2006, el C-130 se convirtió en la quinta aeronave (después de los English Electric Canberra, Boeing B-52 Stratofortress, Tupolev Tu-95, Boeing KC-135 Stratotanker y antes que el Lockheed U-2) en alcanzar los 50 años de uso continuo con su cliente primario original, en este caso la Fuerza Aérea de los Estados Unidos. Y, además, es una de las pocas aeronaves militares que continúa en producción después de 50 años, actualmente se está fabricando la versión actualizada Lockheed Martin C-130J Super Hercules</p>
-            </div>
-        </div>
-
-        <div id="historia"class="historia">
-            <h3>Historia</h3>
-            <div class="text-holder">
-            <p class="text">En 1946, el Jefe de Operaciones Navales, el almirante Chester Nimitz, tuvo la visión de crear un equipo de exhibición de vuelos para aumentar el interés del público en la aviación naval y levantar la moral de la Armada. En la década de 1940, emocionamos al público con nuestras maniobras de combate de precisión en el F6 Hellcat, el F8 Bearcat y el F9 Panther. Durante la década de 1950, refinamos nuestra demostración con maniobras acrobáticas en el F9 Cougar y el F-11 Tiger e introdujimos la primera formación delta de seis aviones, que todavía se vuela hasta el día de hoy. A fines de la década de 1960, estábamos volando el F-4 Phantom, el único avión de dos asientos volado por la formación delta. En 1974, hicimos la transición al A-4 Skyhawk, un avión más pequeño y liviano con un radio de giro más estrecho que permite una demostración de vuelo más dinámica. En 1986, celebramos nuestro 40.º aniversario con la presentación del Boeing F/A-18 Hornet. En 2021, hicimos la transición a nuestro avión actual, el Boeing F/A-18 Super Hornet, y celebramos nuestro 75.° aniversario.<br><br>
-
-                En 1949, se hizo necesario que los Blue Angels operaran un avión de apoyo para mover personal y equipo entre los sitios de exhibición. Estos aviones de apoyo incluyen el Douglas R4D Sky Train, el Curtiss R5C Commando, el Douglas R5D Skymaster y el Lockheed C-121 Super Constellation. En 1970, el equipo recibió el Lockheed Martin C-130, conocido cariñosamente como "Fat Albert". En 2020, "Fat Albert" hizo la transición a su plataforma actual, el C-130J Super Hercules.</p>
-            </div>
-            </div>
-
-        </main>
-    <script src="script.js"></script>
 </body>
 </html>
