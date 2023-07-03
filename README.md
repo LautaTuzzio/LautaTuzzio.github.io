@@ -1,1 +1,1 @@
-profe aprobame por favor.
+La pagina es puramente estatica, el boton de "codigo" no funciona debido a que el winrar no podia ser trasladado a vs
